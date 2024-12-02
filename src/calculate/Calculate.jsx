@@ -14,33 +14,33 @@ const calculate = () => {
           </div>
           <div className=" flex flex-col">
            <div className="flex pt-3 space-x-2 text-2xl text-white">
-            <input className='bg-slate-600 inline-flex items-center w-14 text-center h-14 rounded-md' type="button" value='AC' onClick={e => setValue('')}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='DE' onClick={e => setValue(value.slice(0, -1))}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='.' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 inline-flex items-center w-14 text-center rounded-md' type="button" value='/' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 h-14 rounded-md' type="button" value='AC' onClick={e => setValue('')}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='DE' onClick={e => setValue(value.slice(0, -1))}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='.' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='/' onClick={e => setValue(value + e.target.value)}/>
            </div>
            <div className="flex pt-3 space-x-2 text-2xl text-white">
-            <input className='bg-slate-600 inline-flex items-center w-14 text-center h-14 rounded-md' type="button" value='7' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 inline-flex items-center w-14 text-center rounded-md' type="button" value='8' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='9' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='*' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14  h-14 rounded-md' type="button" value='7' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 w-14 calcu rounded-md' type="button" value='8' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='9' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='*' onClick={e => setValue(value + e.target.value)}/>
            </div>
            <div className="flex pt-3 space-x-2 text-2xl text-white">
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 h-14 rounded-md' type="button" value='4' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='5' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='6' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='+' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 h-14 rounded-md' type="button" value='4' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='5' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='6' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='+' onClick={e => setValue(value + e.target.value)}/>
            </div>
            <div className="flex pt-3 space-x-2 text-2xl text-white">
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 h-14 rounded-md' type="button" value='1' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='2' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='3' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='-' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 h-14 rounded-md' type="button" value='1' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='2' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='3' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='-' onClick={e => setValue(value + e.target.value)}/>
            </div>
            <div className="flex pt-3 space-x-2 text-2xl text-white">
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 h-14 rounded-md' type="button" value='00' onClick={e => setValue('')}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-14 rounded-md' type="button" value='0' onClick={e => setValue(value + e.target.value)}/>
-            <input className='bg-slate-600 text-center inline-flex items-center w-[119px] rounded-md' type="button" value='=' onClick={e => setValue(eval(value))}/>
+            <input className='bg-slate-600 calcu w-14 h-14 rounded-md' type="button" value='00' onClick={e => setValue('')}/>
+            <input className='bg-slate-600 calcu w-14 rounded-md' type="button" value='0' onClick={e => setValue(value + e.target.value)}/>
+            <input className='bg-slate-600 calcu w-[119px] rounded-md' type="button" value='=' onClick={e => setValue(eval(value))}/>
             
            </div>
           </div>
